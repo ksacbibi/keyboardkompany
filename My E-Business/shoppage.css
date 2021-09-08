@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#wrapper {
+	width: 900px;
+	margin:0 auto;
+	padding: 30px;
+	background-image: url("images/contentbackground.jpg");
+	background-size: contain;
+}
+
+#title {
+	font-size: 50px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color:#383838;
+	width: 300px;
+	float: left;
+}
+
+#nav {
+	height: 300px;
+	width: 500px;
+	float: right;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+}
+
+#nav ul {
+	text-align: right;
+}
+
+#nav ul li {
+	display: inline;
+	margin-left:15px;
+}
+
+#this {
+	height: 300px;
+	width: 400px;
+	float: left;
+}
+
+#header {
+	font-size: 40px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+#table {
+	text-align: center;
+}

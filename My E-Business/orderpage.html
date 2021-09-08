@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kyleigh's Keyboard Kompany</title>
+<style type="text/css">
+body {
+    background-image: url(images/background.jpeg);
+}
+</style>
+<link href="orderpage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<script language="javascript">
+		var total = 0;
+		var counter = 0;
+		var guess = [];
+		
+		while (counter < 3 & guess[counter] != 2)
+			{
+				guess[counter] = prompt('Enter a number between 1-20 for a chance to win a free item at checkout! (You get three tries)');
+				counter = counter + 1;
+			}
+		
+		function Confirm(){
+			if (form1.case1.checked == true)
+				{
+					alert('You selected Black case.');
+					total = total + 15;
+				}
+			else 
+				if (form1.case2.checked == true)
+				{
+					alert('You selected Gray case.');
+					total = total + 15;
+				}
+			else
+				if (form1.case3.checked == true)
+					{
+						alert('You selected Rose Gold case.');
+						total = total + 20;
+					}
+			else
+				if (form1.case4.checked == true)
+					{
+						alert('You selected Silver case.');
+						total = total + 20;
+					}
+			
+			if (form1.switch1.checked == true)
+				{
+					alert('You selected Holy Panda switches.');
+					total = total + 15;
+				}
+			else
+				if (form1.switch2.checked == true)
+					{
+						alert('You selected Cherry MX Blue switches.');
+						total = total + 10;
+					}
+			else
+				if (form1.switch3.checked == true)
+					{
+						alert('You selected Razer Purple switches.');
+						total = total + 15;
+					}
+			else
+				if (form1.switch4.checked == true)
+					{
+						alert('You selected Razer Green switches.');
+						total = total + 15;
+					}
+			
+			if (form1.cap1.checked == true)
+				{
+					alert('You selected White keycaps.');
+					total = total + 10;
+				}
+			else
+				if (form1.cap2.checked == true)
+					{
+						alert('You selected Pink keycaps.');
+						total = total + 15;
+					}
+			else
+				if (form1.cap3.checked == true)
+					{
+						alert('You selected Blue keycaps.');
+						total = total + 15;
+					}
+			else 
+				if (form1.cap4.checked == true)
+					{
+						alert('You selected Pudding keycaps.');
+						total = total + 15;
+					}
+			
+			if (form1.extra1.checked == true)
+				{
+					alert('You selected Lubed switches.');
+					total = total + 1;
+				}
+			if (form1.extra2.checked == true)
+				{
+					alert('You selected Sticker.');
+					total = total + 0.5;
+				}
+			if (form1.extra3.checked == true)
+				{
+					alert('You selected Adapter.');
+					total = total + 5;
+				}
+			
+			
+			
+			alert('Your total is: ' + total);
+			
+					for (loop = 0; loop < 2; loop++)
+			{
+				if (guess[loop] == 2)
+					{
+						alert('You won! Your prize will be shipped with your keyboard.');
+					}
+				document.writeln(guess[loop]);
+			}
+		}
+	</script>
+	
+	<div id="wrapper">
+		<div id="this">
+			<div id="title"><p><i><b>Kyleigh's Keyboard Kompany</b></i></p></div>
+				<img src="images/logo.png" height="100">
+			</div>
+		<br>
+		<hr size="3" noshade>
+		<br>
+		<br>
+		<form id="form1">
+		<ol>
+			<li><header id="header">Choose case:</header>
+				<br>
+			  <table width="200">
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Case" value="case1" id="case1">Black $15
+			        <img src="images/case1.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Case" value="case2" id="case2">Gray $15
+			        <img src="images/case2.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Case" value="case3" id="case3">Rose Gold $20
+			        <img src="images/case3.jpeg" height ="200"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Case" value="case4" id="case4">Silver $20
+			        <img src="images/case4.jpeg" height="300"></label></td>
+			    </tr>
+			  </table>
+            </li>
+			<li><header id="header">Choose switch:</header>
+			  <table width="200">
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Choose switches" value="switch1" id="switch1">Holy Panda $15
+			        <img src="images/switch1.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Choose switches" value="switch2" id="switch2">Cherry MX Blue $10
+			        <img src="images/switch2.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Choose switches" value="switch3" id="switch3">Razer Purple $15
+			        <img src="images/switch3.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="Choose switches" value="switch4" id="switch4">Razer Green $15
+			        <img src="images/switch4.png" height="250"></label></td>
+			    </tr>
+			  </table>
+            </li>
+			<li><header id="header">Choose keycaps:</header>
+			  <table width="200">
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="keycaps" value="cap1" id="cap1">White $10
+			        <img src="images/caps1.jpeg" height="300"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="keycaps" value="cap2" id="cap2">Pink $15
+			        <img src="images/caps2.jpeg" height="250"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="keycaps" value="cap3" id="cap3">Blue $15
+			        <img src="images/caps3.jpeg" height="300"></label></td>
+			    </tr>
+				  <tr>
+				    <td><label>
+				      <input type="radio" name="keycaps" value="cap4" id="cap4">Pudding $15
+			        <img src="images/caps4.jpeg" height="250"></label></td>
+			    </tr>
+			  </table>
+            </li>
+		</ol>
+		<br>
+			<header id="header">Choose extras (optional):</header>
+		  <p>
+			  <label>
+			    <input type="checkbox" name="extras" value="extra1" id="extra1">
+			    Lubed switches $1</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="extras" value="extra2" id="extra2">
+			    Sticker $0.50</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="extras" value="extra3" id="extra3">
+			    Adapter $5</label>
+			  <br>
+		  </p>
+			<header id="header">Where are you located:</header>
+			<select>
+				<option value="ca">Canada</option>
+				<option value="us">United States of America</option>
+				<option value="in">Outside of North America</option>
+			</select>
+			<header id="header">Enter address:</header>
+			<input type="text">
+			<br>
+		  <input type="submit" formaction="mailto:ksacbibit@gmail.com" onClick="Confirm(this.form)">
+		<input type="reset">
+		</form>
+	</div>
+</body>
+</html>
